@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+<!--=============== REMIXICONS ===============-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" rel="stylesheet">
+
+<!--=============== SCROLLREVEAL ===============-->
+<script src="assets/js/scrollreveal.js"></script>
+
+  <!--=============== SWIPER CSS ===============-->
+<link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+
+<!--=============== CSS ===============-->
+<link rel="stylesheet" href="assets/css/styles.css" />
+
+<!--=============== SWIPER JS ===============-->
+
+<script src="assets/js/swiper-bundle.js"></script>
+
+<!--=============== EMAIL JS ===============-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <title>DanielAngebrand.com - Responsive Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Daniel
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="ri-home-5-line"></i> Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="ri-braces-line"></i> Skills   
+                            </a>
+                        </li> 
+
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="ri-quill-pen-fill"></i> Qualification   
+                            </a>
+                        </li> 
+
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">
+                                <i class="ri-code-s-slash-line"></i> Projects
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#bulletin" class="nav__link">
+                                <i class="ri-chat-heart-fill"></i> Bulletin
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="ri-chat-3-line"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Close button! -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                    
+                <div class="nav__buttons">
+                        <!-- THEME change button! -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                        <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid section__border">
+                    <div class="home__data grid">
+                        <h1 class="home__title">
+                            Hi, I'm Daniel <br>
+                            <b>Fullstack Developer </b>
+                        </h1>
+                        <div class="home__blob grid">
+                            <div class="home__profile">
+                                <img class="" src="assets/img/test.png" alt="home profilepic">
+                            </div>
+                            <img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes">
+                            <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle">
+                        </div>
+                
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/daniel-angebrand-7b384824b" target="_blank" class="home__social-link">
+                                <i class="ri-linkedin-box-line">       </i>
+                            </a>
+                
+                            <a href="https://github.com/danielangebrand/" target="_blank" class="home__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                    <!--==================== HOME info1 ====================-->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                BIOGRAPHY
+                            </h3>
+                            <p class="home__info-description">
+                                Hi,
+                                I'm a Fullstack Developer
+                                based in Sweden. Passionate about code, music and perfumes
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="home__info-title">
+                                FULLSTACK DEVELOPER
+                            </h3>
+                            <p class="home__info-description">
+                                .NET Full Stack Developer<br>
+                                Open for work
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="home__info-title">
+                                SERVICES
+                            </h3>
+                            <p class="home__info-description">
+                                .NET Fullstack <br />
+                                Frontend
+                            </p>
+                        </div>
+                    </div>
+                    <!--==================== HOME info2 ====================-->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                TIME SPENT LEARNING CODE
+                            </h3>
+                            <p class="home__info-number" id="elapsed-time" />
+                        </div>
+                        <div>
+                            <h3 class="home__info-title">
+                                COMPLETED PROJECTS
+                            </h3>
+                            <p class="home__info-number">
+                                5+
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="home__info-title">
+                                COMPANIES WORKED
+                            </h3>
+                            <p class="home__info-number">
+                                2+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CODING SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Fullstack Developer</h2>
+                <span class="section__subtitle"><i class="ri-braces-fill"></i> Fullstack developing skills</span>
+                <div class="skills__container container grid section__border">
+    <!--==================== Skill 1 ====================-->
+    <div class="skills__content">
+        <h3 class="skills__title">
+            .NET
+        </h3>
+        <div class="skills__info">
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/c--4.svg" alt="skills image">
+                </div>
+
+                <h3 class="skills__name">C# </h3>
+                <span class="skills__subtitle">Main language</span>
+            </div>
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/c--4.svg" alt="skills image">
+                </div>
+
+                <h3 class="skills__name">ASP.NET</h3>
+                <span class="skills__subtitle"></span>
+            </div>
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/VB.svg" alt="skills image">
+                </div>
+
+                <h3 class="skills__name">VB.NET</h3>
+                <span class="skills__subtitle"></span>
+            </div>
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/c--4.svg" alt="skills image">
+                </div>
+
+                <h3 class="skills__name">ORM</h3>
+                <span class="skills__subtitle">EF & Dapper </span>
+            </div>
+        </div>
+    </div>
+    <!--==================== Skill 2 ====================-->
+
+    <div class="skills__content">
+        <h3 class="skills__title">
+            Frontend
+        </h3>
+        <div class="skills__info">
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/html-1.svg" alt="skills image">
+                </div>
+                <h3 class="skills__name">HTML</h3>
+                <span class="skills__subtitle">Basic</span>
+            </div>
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/css-3.svg" alt="skills image">
+                </div>
+                <h3 class="skills__name">CSS</h3>
+                <span class="skills__subtitle">Basic</span>
+            </div>
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/logo-javascript.svg" alt="skills image">
+                </div>
+                <h3 class="skills__name">JavaScript</h3>
+                <span class="skills__subtitle">Basic</span>
+            </div>
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/react-2.svg" alt="skills image">
+                </div>
+                <h3 class="skills__name">React </h3>
+                <span class="skills__subtitle">Basic</span>
+            </div>
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/uiux.png" alt="skills image">
+                </div>
+                <h3 class="skills__name">UI / UX </h3>
+                <span class="skills__subtitle">Basic</span>
+            </div>
+        </div>
+    </div>
+    <!-- =========== SKILLS 3 ============  -->
+    <div class="skills__content">
+        <h3 class="skills__title">
+            Other skills
+        </h3>
+        <div class="skills__info">
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/microsoft-sql-server-1.svg" alt="skills image">
+                </div>
+                <h3 class="skills__name">Database</h3>
+                <span class="skills__subtitle">SQL & T-SQL</span>
+            </div>
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/git-icon.svg" alt="skills image">
+                </div>
+                <h3 class="skills__name">Git</h3>
+                <span class="skills__subtitle"></span>
+            </div>
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/check-line.svg" alt="skills image">
+                </div>
+                <h3 class="skills__name">TDD</h3>
+                <span class="skills__subtitle">SpecFlow, Gherkin</span>
+            </div>
+            <div class="skills__data">
+                <div class="skills__blob">
+                    <img src="assets/img/scrumorg-1.svg" alt="skills image">
+                </div>
+                <h3 class="skills__name">SCRUM </h3>
+                <span class="skills__subtitle"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </section>
+
+            <!--==================== Qualification ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualification</h2>
+<span class="section__subtitle">Experience and education</span>
+<div class="qualification__container container grid section__border">
+    <div class="qualification__content">
+        <!--==================== Work ====================-->
+        <h3 class="qualification__title">
+            <i class="ri-qq-fill"></i> Work
+        </h3>
+        <div class="qualification__info">
+            <div>
+                <span class="qualification__city">Gothenburg</span>
+                <span class="qualification__year">June 2023 - January 2024</span>
+                <h3 class="qualification__name">
+                    System Developer, PengVin Affärssystem AB
+                </h3>
+            </div>
+        </div>
+        <div>
+            <span class="qualification__city">Gothenburg</span>
+            <span class="qualification__year">January 2023 - Present</span>
+            <h3 class="qualification__name">
+                Consultant, Academic Work AB
+            </h3>
+        </div>
+        <div>
+            <span class="qualification__city">Stockholm</span>
+            <span class="qualification__year">June 2010 - Present</span>
+            <h3 class="qualification__name">
+                Freelance musician
+            </h3>
+        </div>
+        <!--==================== Education ====================-->
+        <h3 class="qualification__title">
+            <i class="ri-quill-pen-fill"></i> Education
+        </h3>
+        <div class="qualification__info">
+            <div>
+                <span class="qualification__city">Stockholm</span>
+                <span class="qualification__year">October 2022 - January 2023</span>
+                <h3 class="qualification__name">
+                    Brights Learning - C#.NET Fullstack Developer Winter 23
+                </h3>
+            </div>
+            <div>
+                <span class="qualification__city">Stockholm</span>
+                <span class="qualification__year">August 2010 - June 2014</span>
+                <h3 class="qualification__name">
+                    Royal Academy of Music - Bachelor's degree - Musician
+                </h3>
+            </div>
+        </div>
+    </div>
+    <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
+</div>
+            </section>
+ 
+                <!--==================== Projects ====================-->
+            <section class="projects section" id="projects">
+                <h2 class="section__title">Projects</h2>
+<span class="section__subtitle">Sample of projects</span>
+<div class="container section__border">
+    <div class="projects__container swiper">
+        <div class="swiper-wrapper">
+            <!-- PROJEKT 1 -->
+                <div class="projects__content swiper-slide">
+                    <img src="/assets/img/DoD.png" alt="projects image" class="projects__img">
+                    <div>
+                        <span class="projects__subtitle">(WIP) Game made w. Blazor & .NET 8</span>
+                        <h1 class="projects__title">
+                            Dungeons of Doom
+                        </h1>
+                        <div class="home__social" style="justify-content: center">
+                            <a href="https://dev.azure.com/danielangebrand/BlazorRPG/_git/DungeonsOfDoom" target="_blank" class="home__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                                <a href="https://dev.azure.com/danielangebrand/BlazorRPG/_git/DungeonsOfDoom" target="_blank" class="projects__button">
+                                    <p class="projects__subtitle">
+                                        View code 
+                                    </p> 
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJEKT 2 -->
+                <div class="projects__content swiper-slide">
+                    <img src="/assets/img/project2.jpg" alt="projects image" class="projects__img">
+                    <div>
+                        <span class="projects__subtitle">This site </span>
+                        <h1 class="projects__title">
+                            danielangebrand.com
+                        </h1>
+                        <div class="home__social" style="justify-content: center">
+                            <a href="https://github.com/danielangebrand/danielangebrand" target="_blank" class="home__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+           
+                                <a href="#" class="projects__button">
+                                    <p class="projects__subtitle">Visit </p> <i class="ri-arrow-right-line"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJEKT 3 -->
+                <div class="projects__content swiper-slide">
+                    <img src="/assets/img/project3.jpg" alt="projects image" class="projects__img">
+                    <div>
+                        <span class="projects__subtitle">Examination group project. Quiz-App. </span>
+                        <h1 class="projects__title">
+                            Trivia Royale
+                        </h1>
+                        <div class="home__social" style="justify-content: center">
+                            <a href="https://github.com/joakim-lignerkrona/AW-Slutprojekt/" target="_blank" class="home__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+           
+                                <a href="https://github.com/joakim-lignerkrona/AW-Slutprojekt/" target="_blank" class="projects__button">
+                                    <p class="projects__subtitle">View code </p> <i class="ri-arrow-right-line"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- swiper arrows -->
+                <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+        </div>
+        
+        <!-- swiper pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+                    </section>
+
+            <!--====================  Bulletin ====================-->
+            <section class="bulletin section" id="bulletin">
+                <h2 class="section__title">Bulletin board</h2>
+                <span class="section__subtitle">Here you can read comments about me. </span>
+                <div class="container section__border">
+                    <div class="bulletin__container swiper">
+                        <div class="swiper-wrapper">
+                            <!--==================== Note 1 ====================-->
+                            <div class="bulletin__content swiper-slide">
+                                <p class="bulletin__description">
+                                    <i>
+                                        "Daniel was so great to study with during our C# .Net Fullstack accelerated learning course with Brights. Curious, humble and fun, Daniel really played a significant part in bringing the class together and creating a great space for learning, with and from each other."
+                                    </i>
+                                </p>
+                                
+                                <div>   
+                                    <h3 class="bulletin__name">Johanna Lannerstedt</h3>
+                                    <span class="subtitle">Classmate</span>
+                                </div>
+                            </div>
+                            <div class="bulletin__content swiper-slide">
+                                <p class="bulletin__description">
+                                    <i>
+                                        "Worked with Daniel closely for many years in various music projects. Daniel is always professional and aims to make things at the highest level possible. He also have the gift to make everyone around him feel at ease and have a good time."
+                                    </i>
+                                </p>
+                                
+                                <div>   
+                                    <h3 class="bulletin__name">Björn Arkö</h3>
+                                    <span class="subtitle">Colleague</span>
+                                </div>
+                            </div>
+                            <!--==================== Note 2 ====================-->
+                            <div class="bulletin__content swiper-slide">
+                                <p class="bulletin__description">
+                                    <i>
+                                        "Killen är alltid glad, dessutom är han är riktigt kärleksfull glädjespridare. Om du gillar att vara glad, this is the guy! Bor lite långt bort men hade varit grymt att hamna på samma arbetsplats som dig. “One good thing about music, when it hits you, you feel no pain.”"
+                                    </i>
+                                </p>
+                                
+                                <div>   
+                                    <h3 class="bulletin__name">
+                                        F
+                                    </h3>
+                                    <span class="subtitle">
+                                            Classmate
+                                    </span>
+                                </div>
+                            </div>
+                            <!--==================== Note 3 ====================-->
+                            <div class="bulletin__content swiper-slide">
+                                <p class="bulletin__description">
+                                    <i>"It's always a pleasure working with Daniel on our music projects."</i>
+                                </p>
+                                <div>   
+                                    <h3 class="bulletin__name">
+                                        Robert Pihl
+                                    </h3>
+                                    <span class="subtitle">
+                                        Colleague
+                                    </span>
+                                </div>
+                            </div>
+                             <!--==================== Note 4 ====================-->
+                            <div class="bulletin__content swiper-slide">
+                                <p class="bulletin__description">
+                                    <i>Du är bäst, Daniel. Älskar dig. Snälla svara.</i>
+                                </p>
+                                <div>   
+                                    <h3 class="bulletin__name">
+                                        Niklas
+                                    </h3>
+                                    <span class="subtitle">
+                                        Friend and classmate
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Swiper arrowZ -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                    </div>
+                    <img src="/assets/img/shape-wawes.svg" alt="bulletin image" class="bulletin__img">
+                    </div>
+                </section>
+                
+                <!--==================== CONTACT ====================-->
+                <section class="contact section" id="contact">
+                    <h2 class="section__title">Contact me</h2>
+                    <span class="section__subtitle">Get in touch</span>
+                    <div class="contact__container container grid section__border">
+                        <div class="contact__content">
+                            <h3 class="contact__title">
+                                <i class="ri-chat-3-line"></i> I love to chat!
+                            </h3>
+                            <div class="contact__info">
+                                <div class="contact__data">
+                                <span class="contact__data-title">Social</span>
+                                <span class="contact__data-info"></span>
+                                <a href="https://www.linkedin.com/in/daniel-angebrand-7b384824b/" target="_blank" class="contact__button">
+                                    <i class=ri-linkedin-box-line> LinkedIn</i></a>
+                                </div>
+                                <div class="contact__data">
+                                <span class="contact__data-title">Mail</span>
+                                <span class="contact__data-info"></span>
+                                <a href="mailto: danielangebrand@outlook.com" class="contact__button">
+                                    <i class="ri-mail-send-line"></i></a>
+                                </div>
+                                
+                                <div class="contact__data">
+                                    <span class="contact__data-title">Phone</span>
+                                <span class="contact__data-info"></span>
+                                <a href="tel:+4670-5408363" class="contact__button"><i class="ri-phone-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                            <!--====================  Contact form ====================-->
+                            
+                        <div class="contact__content">
+                            <h3 class="contact__title">
+                                <i class="ri-send-plane-line"></i> Leave a comment!
+                            </h3>
+                            <form action="" class="contact__form" id="contact-form">
+                                <div class="contact__form-div">
+                                    <label class="contact__form-tag">Name</label>
+                                    <input type="text" name="user_name" required placeholder="Name required" class="contact__form-input" id="contact-name">
+                                </div>
+                    
+                                <div class="contact__form-div">
+                                    <label class="contact__form-tag">Relationship</label>
+                                    <input type="text" name="user_label" placeholder="Friend, classmate, colleague.. " class="contact__form-input" id="contact-label">
+                                </div>
+                    
+                                <div class="contact__form-div">
+                                    <label class="contact__form-tag">Mail</label>
+                                    <input type="email" name="user_mail" required placeholder="Mail required" class="contact__form-input" id="contact-mail">
+                                </div>
+                    
+                                <div class="contact__form-div contact__form-area">
+                                    <label class="contact__form-tag">Message</label>
+                                    <textarea name="message" required placeholder="Send some love for me!" id="contact-message" class="contact__form-input"></textarea>
+                                </div>
+                                
+                                <p class="contact__errorMessage" id="contact-errorMessage"></p>
+                    
+                                <button type="submit" class="contact__button">
+                                    Submit <i class="ri-arrow-right-up-line"></i>
+                                </button>
+                            </form>
+                        </div>
+                </div>
+            </section>
+            
+        </main>
+        
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Daniel</h1>
+                <p>Fullstack Developer</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/daniel-angebrand-7b384824b/" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+
+                    <a href="https://www.github.com/danielangebrand" target="_blank" class="footer__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== MAIN JS ===============-->
+        <script type="module" src="assets/js/main.js"></script>
+    </body>
+</html>
